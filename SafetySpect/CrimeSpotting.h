@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CrimeSpottingItem.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface CrimeSpotting : NSObject
 

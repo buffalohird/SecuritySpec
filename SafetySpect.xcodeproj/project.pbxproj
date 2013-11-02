@@ -22,6 +22,7 @@
 		17360BF418257A470023E6DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17360BF218257A470023E6DB /* InfoPlist.strings */; };
 		17360BF618257A470023E6DB /* SafetySpectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17360BF518257A470023E6DB /* SafetySpectTests.m */; };
 		17360C0018258CC20023E6DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17360BFF18258CC10023E6DB /* MapKit.framework */; };
+		17360C0518259F030023E6DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17360C0418259F030023E6DB /* CoreLocation.framework */; };
 		9E2CE898182592DD00117B60 /* CrimeSpotting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2CE895182592DD00117B60 /* CrimeSpotting.m */; };
 		9E2CE899182592DD00117B60 /* CrimeSpottingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2CE897182592DD00117B60 /* CrimeSpottingItem.m */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		17360BF318257A470023E6DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17360BF518257A470023E6DB /* SafetySpectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafetySpectTests.m; sourceTree = "<group>"; };
 		17360BFF18258CC10023E6DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		17360C0418259F030023E6DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9E2CE894182592DD00117B60 /* CrimeSpotting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeSpotting.h; sourceTree = "<group>"; };
 		9E2CE895182592DD00117B60 /* CrimeSpotting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeSpotting.m; sourceTree = "<group>"; };
 		9E2CE896182592DD00117B60 /* CrimeSpottingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeSpottingItem.h; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17360C0518259F030023E6DB /* CoreLocation.framework in Frameworks */,
 				17360C0018258CC20023E6DB /* MapKit.framework in Frameworks */,
 				17360BCD18257A470023E6DB /* CoreGraphics.framework in Frameworks */,
 				17360BCF18257A470023E6DB /* UIKit.framework in Frameworks */,
@@ -110,6 +113,7 @@
 		17360BC918257A470023E6DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17360C0418259F030023E6DB /* CoreLocation.framework */,
 				17360BFF18258CC10023E6DB /* MapKit.framework */,
 				17360BCA18257A470023E6DB /* Foundation.framework */,
 				17360BCC18257A470023E6DB /* CoreGraphics.framework */,

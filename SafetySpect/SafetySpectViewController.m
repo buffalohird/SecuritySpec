@@ -17,10 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.mapView.delegate = self;
-    self.crimeSpotting = [[CrimeSpotting alloc] init];
-    [self.crimeSpotting getDataFromUrl:@"http://sanfrancisco.crimespotting.org/crime-data?format=json&count=10"];
-    [self.mapView addAnnotations: self.crimeSpotting.items];
+    self.mapView.delegate = self;
+    CrimeSpotting* crimeSpotting = [[CrimeSpotting alloc] init];
+    [crimeSpotting getDataFromUrl:@"http://sanfrancisco.crimespotting.org/crime-data?format=json&count=10"];
+    [self.mapView addAnnotations: crimeSpotting.items];
 }
 
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
@@ -29,11 +29,11 @@
     MKAnnotationView* view = [mapView dequeueReusableAnnotationViewWithIdentifier: reuseID];
     if (!view)
     {
-        view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseID];        
+        view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseID];
+        view.canShowCallout = YES;
     }
     return view;
 }
-
 
 
 @end
