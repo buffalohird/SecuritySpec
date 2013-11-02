@@ -22,6 +22,8 @@
 		17360BF418257A470023E6DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17360BF218257A470023E6DB /* InfoPlist.strings */; };
 		17360BF618257A470023E6DB /* SafetySpectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17360BF518257A470023E6DB /* SafetySpectTests.m */; };
 		17360C0018258CC20023E6DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17360BFF18258CC10023E6DB /* MapKit.framework */; };
+		9E2CE898182592DD00117B60 /* CrimeSpotting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2CE895182592DD00117B60 /* CrimeSpotting.m */; };
+		9E2CE899182592DD00117B60 /* CrimeSpottingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2CE897182592DD00117B60 /* CrimeSpottingItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		17360BF318257A470023E6DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17360BF518257A470023E6DB /* SafetySpectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafetySpectTests.m; sourceTree = "<group>"; };
 		17360BFF18258CC10023E6DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9E2CE894182592DD00117B60 /* CrimeSpotting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeSpotting.h; sourceTree = "<group>"; };
+		9E2CE895182592DD00117B60 /* CrimeSpotting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeSpotting.m; sourceTree = "<group>"; };
+		9E2CE896182592DD00117B60 /* CrimeSpottingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeSpottingItem.h; sourceTree = "<group>"; };
+		9E2CE897182592DD00117B60 /* CrimeSpottingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeSpottingItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,7 @@
 		17360BD018257A470023E6DB /* SafetySpect */ = {
 			isa = PBXGroup;
 			children = (
+				9E2CE893182592CA00117B60 /* Models */,
 				17360BDC18257A470023E6DB /* Main.storyboard */,
 				17360BDF18257A470023E6DB /* SafetySpectViewController.h */,
 				17360BE018257A470023E6DB /* SafetySpectViewController.m */,
@@ -154,6 +161,17 @@
 				17360BF218257A470023E6DB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E2CE893182592CA00117B60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E2CE894182592DD00117B60 /* CrimeSpotting.h */,
+				9E2CE895182592DD00117B60 /* CrimeSpotting.m */,
+				9E2CE896182592DD00117B60 /* CrimeSpottingItem.h */,
+				9E2CE897182592DD00117B60 /* CrimeSpottingItem.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +274,9 @@
 			files = (
 				17360BDB18257A470023E6DB /* SafetySpectAppDelegate.m in Sources */,
 				17360BD718257A470023E6DB /* main.m in Sources */,
+				9E2CE898182592DD00117B60 /* CrimeSpotting.m in Sources */,
 				17360BE118257A470023E6DB /* SafetySpectViewController.m in Sources */,
+				9E2CE899182592DD00117B60 /* CrimeSpottingItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +485,7 @@
 				17360BFB18257A470023E6DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17360BFC18257A470023E6DB /* Build configuration list for PBXNativeTarget "SafetySpectTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +494,7 @@
 				17360BFE18257A470023E6DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
