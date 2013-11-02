@@ -21,6 +21,7 @@
 
 -(void)initFromDictionary:(NSDictionary *)dictionary;
 -(void)printItem;
+-(CLLocationCoordinate2D)coordinate;
 
 
 @end

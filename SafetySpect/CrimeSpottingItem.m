@@ -45,4 +45,13 @@
     NSLog([NSString stringWithFormat:@"%@", dict]);
 }
 
+-(CLLocationCoordinate2D)coordinate
+{
+    CLLocationCoordinate2D coordinate;
+    coordinate.latitude = self.latitude;
+    coordinate.longitude = self.longitude;
+    return coordinate;
+    
+}
+
 @end
