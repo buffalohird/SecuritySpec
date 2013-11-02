@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CrimeSpotting.h"
 #import <MapKit/MapKit.h>
 
 @interface SafetySpectViewController : UIViewController <MKMapViewDelegate>
 
 @property (nonatomic, strong) IBOutlet MKMapView* mapView;
+@property (nonatomic, strong) CrimeSpotting* crimeSpotting;
 
 @end
