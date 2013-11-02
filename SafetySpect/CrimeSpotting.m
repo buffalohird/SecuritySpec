@@ -6,6 +6,10 @@
 //  Copyright (c) 2013 Buffalo Hird. All rights reserved.
 //
 
+//self.crimeSpotting = [[CrimeSpotting alloc] init];
+//[self.crimeSpotting getDataFromUrl:@"http://sanfrancisco.crimespotting.org/crime-data?format=json&count=10"];
+//self.CrimeSpotting.items
+
 #import "CrimeSpotting.h"
 
 @implementation CrimeSpotting
