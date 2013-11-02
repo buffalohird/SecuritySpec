@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CA40D910-BD61-4A88-B890-6E3071EEA5CE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SafetySpect</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7A20CCEE-932F-431C-B626-0B1E3397A609</key>
+		<string>https://github.com/buffalohird/SecuritySpec.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SafetySpect.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7A20CCEE-932F-431C-B626-0B1E3397A609</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/buffalohird/SecuritySpec.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7A20CCEE-932F-431C-B626-0B1E3397A609</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7A20CCEE-932F-431C-B626-0B1E3397A609</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SecuritySpec</string>
+		</dict>
+	</array>
+</dict>
+</plist>
