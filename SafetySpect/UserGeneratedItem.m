@@ -15,7 +15,9 @@
     self.createdAt = parseObject.createdAt;
     self.updatedAt = parseObject.updatedAt;
     self.title = [parseObject objectForKey: @"title"];
+    self.title = [[[self.title substringToIndex:1] uppercaseString] stringByAppendingString:[[self.title substringFromIndex:1] lowercaseString]];
     self.subtitle = [parseObject objectForKey: @"subtitle"];
+    self.subtitle = [[[self.subtitle substringToIndex:1] uppercaseString] stringByAppendingString:[[self.subtitle substringFromIndex:1] lowercaseString]];
     self.type = [parseObject objectForKey: @"type"];
     self.date = [parseObject objectForKey: @"date"];
     self.latitude = [[parseObject objectForKey: @"latitude"] doubleValue];
@@ -29,5 +31,10 @@
     coordinate.longitude = self.longitude;
     return coordinate;
 }
+
+/*- (UIImage *)thumbnail
+{
+    return [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.thumbnailURLString]]];
+}*/
 
 @end

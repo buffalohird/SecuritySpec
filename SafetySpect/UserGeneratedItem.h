@@ -26,6 +26,7 @@
 
 @property (nonatomic, strong) NSString* type;
 @property (nonatomic, strong) NSDate* date;
+@property (nonatomic, strong) UIImage *thumbnail;
 
 -(void)initFromParseObject:(PFObject *) parseObject;
 -(CLLocationCoordinate2D)coordinate;

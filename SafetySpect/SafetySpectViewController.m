@@ -19,6 +19,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]
+                                          initWithTarget:self action:@selector(handleGesture:)];
+    longPress.delegate = self;
+    longPress.minimumPressDuration = 2.0;  //user must press for 2 seconds
+    
+    [self.mapView addGestureRecognizer:longPress];
+    
     self.mapView.delegate = self;
     self.locationManager.delegate = self; 
     self.mapView.showsUserLocation = YES;
@@ -36,10 +44,25 @@
     {
         [self.locationManager startUpdatingLocation];
     }
+}
+
+- (void)handleGesture:(UIGestureRecognizer *)gestureRecognizer
+{
+    if (gestureRecognizer.state != UIGestureRecognizerStateEnded)
+        return;
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    [testObject setObject:@"bar" forKey:@"foo"];
-    [testObject save];
+    CGPoint touchPoint = [gestureRecognizer locationInView: self.mapView];
+    CLLocationCoordinate2D touchMapCoordinate =
+    [self.mapView convertPoint:touchPoint toCoordinateFromView: self.mapView];
+    
+    self.coordSubmit = touchMapCoordinate;
+    [self performSegueWithIdentifier:@"submitCrime" sender:self];
+
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
 }
 
 - (CLLocationManager*) locationManager {
@@ -58,27 +81,25 @@
 
 - (IBAction)addUserInformation:(id)sender
 {
-    
+    self.coordSubmit = self.mapView.userLocation.coordinate;
+    [self performSegueWithIdentifier:@"submitCrime" sender:self];
 }
 
 - (void) viewWillAppear:(BOOL)animated
 {
+    [self.mapView removeAnnotations: self.mapView.annotations];
+    
+    [self.crimeSpotting getDataFromUrl:@"http://sanfrancisco.crimespotting.org/crime-data?format=json&count=1000"];
+    [self.userGenerated getDataForParseObject: @"UserCrimeAnnotation"];
+    
     if (self.police)
     {
         [self.mapView addAnnotations: self.crimeSpotting.items];
-    }
-    else
-    {
-        [self.mapView removeAnnotations: self.crimeSpotting.items];
     }
     
     if (self.user)
     {
         [self.mapView addAnnotations: self.userGenerated.items];
-    }
-    else
-    {
-        [self.mapView removeAnnotations: self.userGenerated.items];
     }
     
     if (self.twitter)
@@ -100,13 +121,36 @@
     }
     
     static NSString* reuseID = @"SafetySpectMap";
-    MKAnnotationView* view = [mapView dequeueReusableAnnotationViewWithIdentifier: reuseID];
+    MKPinAnnotationView* view = (MKPinAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier: reuseID];
     if (!view)
     {
         view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseID];
         view.canShowCallout = YES;
+        if ([self.crimeSpotting.items containsObject: annotation])
+        {
+            view.pinColor = MKPinAnnotationColorRed;
+        }
+        else if ([self.userGenerated.items containsObject: annotation])
+        {
+            view.pinColor = MKPinAnnotationColorGreen;
+        }
+        if ([mapView.delegate respondsToSelector:@selector(mapView:annotationView:calloutAccessoryControlTapped:)]) {
+            view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        }
+        view.leftCalloutAccessoryView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,30,30)];
     }
     return view;
+}
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+    if ([view.leftCalloutAccessoryView isKindOfClass:[UIImageView class]]) {
+        UIImageView *imageView = (UIImageView *)(view.leftCalloutAccessoryView);
+        if ([view.annotation respondsToSelector:@selector(thumbnail)]) {
+            // this should be done in a different thread!
+            imageView.image = [view.annotation performSelector:@selector(thumbnail)];
+        }
+    }
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -117,6 +161,12 @@
         destination.twitter = self.twitter;
         destination.police = self.police;
         destination.user = self.user; 
+    }
+    else if ([segue.identifier isEqualToString:@"submitCrime"])
+    {
+        
+        SafetySpectSubmitViewController* destination = segue.destinationViewController;
+        destination.coordinate = self.coordSubmit;
     }
 }
 

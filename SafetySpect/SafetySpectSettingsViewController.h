@@ -14,8 +14,7 @@
 @property (nonatomic) BOOL twitter;
 @property (nonatomic) BOOL user;
 
-@property (weak, nonatomic) IBOutlet UISwitch *policeSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *twitterSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *userSwitch;
+@property (strong, nonatomic) NSArray* types;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

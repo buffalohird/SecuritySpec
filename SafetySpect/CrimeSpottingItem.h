@@ -21,6 +21,8 @@
 @property (nonatomic) double longitude;
 @property (nonatomic, strong) NSString *time;
 @property (nonatomic, strong) NSDictionary *dict;
+@property (nonatomic, strong) NSString *type;
+@property (nonatomic, strong) UIImage *thumbnail;
 
 
 @property (nonatomic, strong) NSDictionary* dictionary; 

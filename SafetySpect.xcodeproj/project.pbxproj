@@ -35,6 +35,7 @@
 		17F965D11825DF0F007BD9FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17360BCA18257A470023E6DB /* Foundation.framework */; };
 		17F965D41825E188007BD9FC /* UserGenerated.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F965D31825E188007BD9FC /* UserGenerated.m */; };
 		17F965D71825E19C007BD9FC /* UserGeneratedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F965D61825E19C007BD9FC /* UserGeneratedItem.m */; };
+		17F965DA1826020B007BD9FC /* SafetySpectSubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F965D91826020B007BD9FC /* SafetySpectSubmitViewController.m */; };
 		9E2CE898182592DD00117B60 /* CrimeSpotting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2CE895182592DD00117B60 /* CrimeSpotting.m */; };
 		9E2CE899182592DD00117B60 /* CrimeSpottingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2CE897182592DD00117B60 /* CrimeSpottingItem.m */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,8 @@
 		17F965D31825E188007BD9FC /* UserGenerated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGenerated.m; sourceTree = "<group>"; };
 		17F965D51825E19C007BD9FC /* UserGeneratedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGeneratedItem.h; sourceTree = "<group>"; };
 		17F965D61825E19C007BD9FC /* UserGeneratedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGeneratedItem.m; sourceTree = "<group>"; };
+		17F965D81826020B007BD9FC /* SafetySpectSubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafetySpectSubmitViewController.h; sourceTree = "<group>"; };
+		17F965D91826020B007BD9FC /* SafetySpectSubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafetySpectSubmitViewController.m; sourceTree = "<group>"; };
 		9E2CE894182592DD00117B60 /* CrimeSpotting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeSpotting.h; sourceTree = "<group>"; };
 		9E2CE895182592DD00117B60 /* CrimeSpotting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeSpotting.m; sourceTree = "<group>"; };
 		9E2CE896182592DD00117B60 /* CrimeSpottingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeSpottingItem.h; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 			children = (
 				9E2CE893182592CA00117B60 /* Models */,
 				17360BDC18257A470023E6DB /* Main.storyboard */,
+				17F965D81826020B007BD9FC /* SafetySpectSubmitViewController.h */,
+				17F965D91826020B007BD9FC /* SafetySpectSubmitViewController.m */,
 				17360C061825C4A10023E6DB /* SafetySpectSettingsViewController.h */,
 				17360C071825C4A10023E6DB /* SafetySpectSettingsViewController.m */,
 				17360BDF18257A470023E6DB /* SafetySpectViewController.h */,
@@ -329,6 +334,7 @@
 			files = (
 				17360BDB18257A470023E6DB /* SafetySpectAppDelegate.m in Sources */,
 				17360C081825C4A10023E6DB /* SafetySpectSettingsViewController.m in Sources */,
+				17F965DA1826020B007BD9FC /* SafetySpectSubmitViewController.m in Sources */,
 				17360BD718257A470023E6DB /* main.m in Sources */,
 				17F965D71825E19C007BD9FC /* UserGeneratedItem.m in Sources */,
 				9E2CE898182592DD00117B60 /* CrimeSpotting.m in Sources */,
