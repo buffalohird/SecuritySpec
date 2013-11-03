@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17360BCB18257A470023E6DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17360BCA18257A470023E6DB /* Foundation.framework */; };
 		17360BCD18257A470023E6DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17360BCC18257A470023E6DB /* CoreGraphics.framework */; };
 		17360BCF18257A470023E6DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17360BCE18257A470023E6DB /* UIKit.framework */; };
 		17360BD518257A470023E6DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17360BD318257A470023E6DB /* InfoPlist.strings */; };
@@ -23,6 +22,19 @@
 		17360BF618257A470023E6DB /* SafetySpectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17360BF518257A470023E6DB /* SafetySpectTests.m */; };
 		17360C0018258CC20023E6DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17360BFF18258CC10023E6DB /* MapKit.framework */; };
 		17360C0518259F030023E6DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17360C0418259F030023E6DB /* CoreLocation.framework */; };
+		17360C081825C4A10023E6DB /* SafetySpectSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17360C071825C4A10023E6DB /* SafetySpectSettingsViewController.m */; };
+		17F965C01825DC72007BD9FC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F965BF1825DC72007BD9FC /* Parse.framework */; };
+		17F965C21825DE48007BD9FC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F965C11825DE48007BD9FC /* AudioToolbox.framework */; };
+		17F965C41825DE53007BD9FC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F965C31825DE53007BD9FC /* CFNetwork.framework */; };
+		17F965C61825DE8C007BD9FC /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F965C51825DE8C007BD9FC /* libz.1.1.3.dylib */; };
+		17F965C81825DE96007BD9FC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F965C71825DE96007BD9FC /* MobileCoreServices.framework */; };
+		17F965CA1825DE9D007BD9FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F965C91825DE9D007BD9FC /* QuartzCore.framework */; };
+		17F965CC1825DEA4007BD9FC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F965CB1825DEA4007BD9FC /* Security.framework */; };
+		17F965CE1825DED3007BD9FC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F965CD1825DED3007BD9FC /* StoreKit.framework */; };
+		17F965D01825DEDF007BD9FC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F965CF1825DEDF007BD9FC /* SystemConfiguration.framework */; };
+		17F965D11825DF0F007BD9FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17360BCA18257A470023E6DB /* Foundation.framework */; };
+		17F965D41825E188007BD9FC /* UserGenerated.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F965D31825E188007BD9FC /* UserGenerated.m */; };
+		17F965D71825E19C007BD9FC /* UserGeneratedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F965D61825E19C007BD9FC /* UserGeneratedItem.m */; };
 		9E2CE898182592DD00117B60 /* CrimeSpotting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2CE895182592DD00117B60 /* CrimeSpotting.m */; };
 		9E2CE899182592DD00117B60 /* CrimeSpottingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2CE897182592DD00117B60 /* CrimeSpottingItem.m */; };
 /* End PBXBuildFile section */
@@ -59,6 +71,21 @@
 		17360BF518257A470023E6DB /* SafetySpectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafetySpectTests.m; sourceTree = "<group>"; };
 		17360BFF18258CC10023E6DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		17360C0418259F030023E6DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		17360C061825C4A10023E6DB /* SafetySpectSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafetySpectSettingsViewController.h; sourceTree = "<group>"; };
+		17360C071825C4A10023E6DB /* SafetySpectSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafetySpectSettingsViewController.m; sourceTree = "<group>"; };
+		17F965BF1825DC72007BD9FC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		17F965C11825DE48007BD9FC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		17F965C31825DE53007BD9FC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		17F965C51825DE8C007BD9FC /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		17F965C71825DE96007BD9FC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		17F965C91825DE9D007BD9FC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		17F965CB1825DEA4007BD9FC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		17F965CD1825DED3007BD9FC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		17F965CF1825DEDF007BD9FC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		17F965D21825E188007BD9FC /* UserGenerated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGenerated.h; sourceTree = "<group>"; };
+		17F965D31825E188007BD9FC /* UserGenerated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGenerated.m; sourceTree = "<group>"; };
+		17F965D51825E19C007BD9FC /* UserGeneratedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGeneratedItem.h; sourceTree = "<group>"; };
+		17F965D61825E19C007BD9FC /* UserGeneratedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGeneratedItem.m; sourceTree = "<group>"; };
 		9E2CE894182592DD00117B60 /* CrimeSpotting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeSpotting.h; sourceTree = "<group>"; };
 		9E2CE895182592DD00117B60 /* CrimeSpotting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeSpotting.m; sourceTree = "<group>"; };
 		9E2CE896182592DD00117B60 /* CrimeSpottingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeSpottingItem.h; sourceTree = "<group>"; };
@@ -70,11 +97,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F965D01825DEDF007BD9FC /* SystemConfiguration.framework in Frameworks */,
+				17F965CE1825DED3007BD9FC /* StoreKit.framework in Frameworks */,
+				17F965CC1825DEA4007BD9FC /* Security.framework in Frameworks */,
+				17F965CA1825DE9D007BD9FC /* QuartzCore.framework in Frameworks */,
+				17F965C81825DE96007BD9FC /* MobileCoreServices.framework in Frameworks */,
+				17F965C61825DE8C007BD9FC /* libz.1.1.3.dylib in Frameworks */,
 				17360C0518259F030023E6DB /* CoreLocation.framework in Frameworks */,
-				17360C0018258CC20023E6DB /* MapKit.framework in Frameworks */,
 				17360BCD18257A470023E6DB /* CoreGraphics.framework in Frameworks */,
+				17F965C41825DE53007BD9FC /* CFNetwork.framework in Frameworks */,
+				17F965C21825DE48007BD9FC /* AudioToolbox.framework in Frameworks */,
+				17360C0018258CC20023E6DB /* MapKit.framework in Frameworks */,
 				17360BCF18257A470023E6DB /* UIKit.framework in Frameworks */,
-				17360BCB18257A470023E6DB /* Foundation.framework in Frameworks */,
+				17F965C01825DC72007BD9FC /* Parse.framework in Frameworks */,
+				17F965D11825DF0F007BD9FC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +149,15 @@
 		17360BC918257A470023E6DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17F965CF1825DEDF007BD9FC /* SystemConfiguration.framework */,
+				17F965CD1825DED3007BD9FC /* StoreKit.framework */,
+				17F965CB1825DEA4007BD9FC /* Security.framework */,
+				17F965C91825DE9D007BD9FC /* QuartzCore.framework */,
+				17F965C71825DE96007BD9FC /* MobileCoreServices.framework */,
+				17F965C51825DE8C007BD9FC /* libz.1.1.3.dylib */,
+				17F965C31825DE53007BD9FC /* CFNetwork.framework */,
+				17F965C11825DE48007BD9FC /* AudioToolbox.framework */,
+				17F965BF1825DC72007BD9FC /* Parse.framework */,
 				17360C0418259F030023E6DB /* CoreLocation.framework */,
 				17360BFF18258CC10023E6DB /* MapKit.framework */,
 				17360BCA18257A470023E6DB /* Foundation.framework */,
@@ -128,6 +173,8 @@
 			children = (
 				9E2CE893182592CA00117B60 /* Models */,
 				17360BDC18257A470023E6DB /* Main.storyboard */,
+				17360C061825C4A10023E6DB /* SafetySpectSettingsViewController.h */,
+				17360C071825C4A10023E6DB /* SafetySpectSettingsViewController.m */,
 				17360BDF18257A470023E6DB /* SafetySpectViewController.h */,
 				17360BE018257A470023E6DB /* SafetySpectViewController.m */,
 				17360BE218257A470023E6DB /* Images.xcassets */,
@@ -174,6 +221,10 @@
 				9E2CE895182592DD00117B60 /* CrimeSpotting.m */,
 				9E2CE896182592DD00117B60 /* CrimeSpottingItem.h */,
 				9E2CE897182592DD00117B60 /* CrimeSpottingItem.m */,
+				17F965D21825E188007BD9FC /* UserGenerated.h */,
+				17F965D31825E188007BD9FC /* UserGenerated.m */,
+				17F965D51825E19C007BD9FC /* UserGeneratedItem.h */,
+				17F965D61825E19C007BD9FC /* UserGeneratedItem.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -277,9 +328,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				17360BDB18257A470023E6DB /* SafetySpectAppDelegate.m in Sources */,
+				17360C081825C4A10023E6DB /* SafetySpectSettingsViewController.m in Sources */,
 				17360BD718257A470023E6DB /* main.m in Sources */,
+				17F965D71825E19C007BD9FC /* UserGeneratedItem.m in Sources */,
 				9E2CE898182592DD00117B60 /* CrimeSpotting.m in Sources */,
 				17360BE118257A470023E6DB /* SafetySpectViewController.m in Sources */,
+				17F965D41825E188007BD9FC /* UserGenerated.m in Sources */,
 				9E2CE899182592DD00117B60 /* CrimeSpottingItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +461,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/aksharbonu/SecuritySpec,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SafetySpect/SafetySpect-Prefix.pch";
 				INFOPLIST_FILE = "SafetySpect/SafetySpect-Info.plist";
@@ -420,6 +478,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/aksharbonu/SecuritySpec,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SafetySpect/SafetySpect-Prefix.pch";
 				INFOPLIST_FILE = "SafetySpect/SafetySpect-Info.plist";

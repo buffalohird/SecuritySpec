@@ -53,10 +53,6 @@
         [returnObjects addObject:newItem];
         //do something else
     }
-    for (CrimeSpottingItem *element in returnObjects)
-    {
-        [element printItem];
-    }
     self.items = returnObjects;
     //NSLog([NSString stringWithFormat:@"%@",returnData]);
     

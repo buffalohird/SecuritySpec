@@ -7,12 +7,16 @@
 //
 
 #import "SafetySpectAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation SafetySpectAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"xCKl7tui05wlmrKcoBFNWcxTgv9hVCMDD9TsKHRQ"
+                  clientKey:@"OyiYYopukwAT9lFV5UnFhF35YldEzLRaffFtWO1C"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }
 							
